@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Clients Dashboard</h1>
+    </header>
+    <div class="container">
+        <div class="filters">
+            <label for="filter">Filter:</label>
+            <select id="filter">
+                <option value="all">All clients</option>
+                <option value="managers">Managers only</option>
+                <option value="non-managers">Non managers</option>
+            </select>
+        </div>
+        <ul id="client-list"></ul>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup-content" id="popup-content">
+            <span class="close" id="close-popup">&times;</span>
+            <h2 id="popup-name"></h2>
+            <p><strong>Points:</strong> <span id="popup-points"></span></p>
+            <p><strong>Address:</strong> <span id="popup-address"></span></p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dotween/1.2.1/DOTween.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
